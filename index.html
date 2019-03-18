@@ -5,8 +5,8 @@
   <meta charset="utf-8">
   <title>Registration Thingny</title>
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
-  <link href="css/grid.css" rel="stylesheet">
   <link href="css/modules.css" rel="stylesheet">
+  <link href="css/grid.css" rel="stylesheet">
   <link href="css/type.css" rel="stylesheet">
   <link href="css/main.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
@@ -14,33 +14,33 @@
 
 <body>
 
-  <section class="grid">
-    <div class="max-length unit unit-xs-1 unit-s-1 unit-m-1-2 unit-l-1-2">
+  <section class="grid island">
+    <div class="max-length unit unit-xs-1 unit-s-1 unit-m-1 unit-l-1">
 
-      <h1>Want to go to Mars?</h1>
-      <p>We’re looking for super-awesome human beings who want to make the long trek to Mars for the adventure of a lifetime.</p>
+      <h1 class="pad-t not-bold">Want to go to Mars?</h1>
+      <p class="mega">We’re looking for super-awesome human beings who want to make the long trek to Mars for the adventure of a lifetime.</p>
 
       <form class="push-0" method="POST" action="https://formspree.io/catherine_wilkie@hotmail.com">
 
-        <fieldset>
-          <legend class="push-1-2 italic">Personal details</legend>
+        <fieldset class="push-none">
+          <legend class="push-1-2 italic mega not-bold">Personal details</legend>
 
-          <div class="push">
+          <div class="push unit unit-xs-1 unit-s-1 unit-m-1 unit-l-1-3">
             <label for="name">Name</label>
             <input class="box" id="name" name="name" required>
           </div>
 
-          <div class="push">
-              <label for="month">Age</label>
-              <input class="box" id="month" required>
-            </div>
+          <div class="push unit unit-xs-1 unit-s-1 unit-m-1 unit-l-1-3">
+            <label for="month">Age</label>
+            <input class="box" id="month" required>
+          </div>
 
-          <div class="push">
+          <div class="push unit unit-xs-1 unit-s-1 unit-m-1 unit-l-1-3">
             <label for="email">Email</label>
             <input class="box" id="email" type="email" name="email" required>
           </div>
 
-          <div class="push">
+          <div class="push unit unit-xs-1 unit-s-1 unit-m-1 unit-l-1-3">
             <label for="subject">Physical fitness</label>
             <select class="box" id="subject" name="_subject">
               <option>Super-human</option>
@@ -50,21 +50,21 @@
             </select>
           </div>
 
-          <div class="push">
-            <label for="text">Address</label>
-            <textarea class="box" id="details" required></textarea>
+          <div class="push unit unit-xs-1 unit-s-1 unit-m-1 unit-l-1">
+            <label for="details">Address</label>
+            <textarea class="box" id="details" name="address" required></textarea>
           </div>
         </fieldset>
 
         <fieldset>
-          <legend class="push-1-2 italic">Mission statement</legend>
+          <legend class="push-1-2 italic mega not-bold">Mission statement</legend>
 
-          <div class="push">
-              <label for="text">Why do you want to go to Mars?</label>
-              <textarea class="box" name="message" required></textarea>
+          <div class="push unit unit-xs-1 unit-s-1 unit-m-1 unit-l-1">
+            <label for="message">Why do you want to go to Mars?</label>
+            <textarea class="box" id="message" name="message" required></textarea>
           </div>
 
-          <div>
+          <div class="text-center unit unit-xs-1 unit-s-1 unit-m-1 unit-l-1">
             <button class="btn btn-box mega" type="submit">Register for the trip!</button>
           </div>
         </fieldset>
@@ -76,8 +76,6 @@
       </form>
     </div>
   </section>
-
-
 
 </body>
 
