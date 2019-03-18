@@ -14,10 +14,10 @@
 
 <body>
 
-  <section>
-    <div class="max-length">
+  <section class="grid">
+    <div class="max-length unit unit-xs-1 unit-s-1 unit-m-1-2 unit-l-1-2">
 
-      <h1 class="">Want to go to Mars?</h1>
+      <h1>Want to go to Mars?</h1>
       <p>We’re looking for super-awesome human beings who want to make the long trek to Mars for the adventure of a lifetime.</p>
 
       <form class="push-0" method="POST" action="https://formspree.io/catherine_wilkie@hotmail.com">
@@ -27,22 +27,22 @@
 
           <div class="push">
             <label for="name">Name</label>
-            <input id="text" name="name" required>
+            <input class="box" id="text" name="name" required>
           </div>
 
           <div class="push">
               <label for="month">Age</label>
-              <input id="month" name="name" required>
+              <input class="box" id="month" required>
             </div>
 
           <div class="push">
             <label for="email">Email</label>
-            <input id="email" type="email" name="email" required>
+            <input class="box" id="email" type="email" name="email" required>
           </div>
 
           <div class="push">
             <label for="subject">Physical fitness</label>
-            <select id="subject" name="_subject">
+            <select class="box" id="subject" name="_subject">
               <option>Super-human</option>
               <option>Fit as a fiddle</option>
               <option>Not terribly strong</option>
@@ -52,7 +52,7 @@
 
           <div class="push">
             <label for="text">Address</label>
-            <textarea id="details" name="message" required></textarea>
+            <textarea class="box" id="details" required></textarea>
           </div>
         </fieldset>
 
@@ -61,13 +61,15 @@
 
           <div class="push">
               <label for="text">Why do you want to go to Mars?</label>
-              <textarea id="details" name="message" required></textarea>
+              <textarea class="box" id="details" name="message" required></textarea>
             </div>
 
           <div>
-            <button class="btn btn-box mega" type="submit">Send message</button>
+            <button class="btn btn-box mega" type="submit">Register for the trip!</button>
           </div>
         </fieldset>
+
+        <input type=“hidden” name=“_subject” value=“Request to join the mission”>
 
       </form>
     </div>
